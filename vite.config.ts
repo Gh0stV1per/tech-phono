@@ -7,10 +7,12 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
-  tanstackStart: {
-    server: {
-      entry: "server",
-      preset: "vercel",
+  nitro: {
+    preset: "vercel",
+    output: {
+      dir: ".vercel/output",
+      serverDir: ".vercel/output/functions",
+      publicDir: ".vercel/output/static",
     },
   },
 });
