@@ -12,9 +12,4 @@ export default defineConfig({
       entry: "server",
     },
   },
-  vite: {
-    build: {
-      ssr: false,
-    },
-  },
 });
