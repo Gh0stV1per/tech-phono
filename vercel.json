@@ -1,19 +1,5 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": ".output/public",
-  "functions": {
-    "api/server.js": {
-      "runtime": "nodejs20.x"
-    }
-  },
-  "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "/api/server"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/api/server"
-    }
-  ]
+  "outputDirectory": ".vercel/output",
+  "framework": null
 }
